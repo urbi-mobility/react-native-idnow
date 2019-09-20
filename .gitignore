@@ -31,6 +31,7 @@ project.xcworkspace
 # Android/IntelliJ
 #
 build/
+android/bin/
 .idea
 .gradle
 local.properties
@@ -40,3 +41,7 @@ local.properties
 buck-out/
 \.buckd/
 *.keystore
+
+# VSCode
+#
+.vscode/

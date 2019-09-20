@@ -22,7 +22,7 @@ apply plugin: 'maven'
 // https://github.com/facebook/react-native/blob/0.60-stable/template/android/build.gradle#L5-L9
 def DEFAULT_COMPILE_SDK_VERSION = 28
 def DEFAULT_BUILD_TOOLS_VERSION = "28.0.3"
-def DEFAULT_MIN_SDK_VERSION = 16
+def DEFAULT_MIN_SDK_VERSION = 21
 def DEFAULT_TARGET_SDK_VERSION = 28
 
 android {
@@ -41,6 +41,9 @@ android {
 }
 
 repositories {
+    flatDir {
+        dirs "$projectDir/libs"
+    }
     maven {
         // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
         // Matches recent template from React Native 0.59 / 0.60
@@ -49,10 +52,18 @@ repositories {
         url "$projectDir/../node_modules/react-native/android"
     }
     mavenCentral()
+    google()
 }
 
 dependencies {
     implementation "com.facebook.react:react-native:${safeExtGet('reactnativeVersion', '+')}"
+    compile 'de.idnow.sdk:idnow-android-3.21.1@aar'
+
+    compile 'org.slf4j:slf4j-android:1.7.12'
+    compile 'io.sentry:sentry-android:1.7.27'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp3:okhttp:3.12.1'
+    compile 'com.googlecode.libphonenumber:libphonenumber:8.4.2'
 }
 
 def configureReactNativePom(def pom) {

@@ -5,6 +5,8 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Callback;
 
+import de.idnow.sdk.IDnowSDK;
+
 public class RNIDNowModule extends ReactContextBaseJavaModule {
 
     private final ReactApplicationContext reactContext;
@@ -21,7 +23,11 @@ public class RNIDNowModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
-        // TODO: Implement some actually useful functionality
-        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+        try {
+            IDnowSDK.getInstance().initialize(this.reactContext.getCurrentActivity(), "");
+            callback.invoke("yo! IDnow is all set!");
+        } catch (Exception e) {
+            callback.invoke("he, IDnow failed with message" + e.getMessage() + ". See logs for details.");
+        }
     }
 }
