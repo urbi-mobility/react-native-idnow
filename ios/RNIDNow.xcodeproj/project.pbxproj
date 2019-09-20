@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNIDNow.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNIDNow.m */; };
+		E614839F23352B3600E0AB0F /* libPods-RNIDNow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E614839E23352B3600E0AB0F /* libPods-RNIDNow.a */; };
+		E6F030FB2335148500BA8B55 /* libidnow-sdk-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F030FA2335148500BA8B55 /* libidnow-sdk-universal.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +26,22 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNIDNow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNIDNow.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D16513E2A5FB8A91CF729C /* libPods-RNIDNow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNIDNow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FCEE8C695CB5E2269201B23 /* Pods-RNIDNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNIDNow.debug.xcconfig"; path = "Target Support Files/Pods-RNIDNow/Pods-RNIDNow.debug.xcconfig"; sourceTree = "<group>"; };
+		90681463F8FA8DFC64FEA30E /* Pods-RNIDNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNIDNow.release.xcconfig"; path = "Target Support Files/Pods-RNIDNow/Pods-RNIDNow.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNIDNow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNIDNow.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNIDNow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNIDNow.m; sourceTree = "<group>"; };
+		E614838E23352AF200E0AB0F /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839023352AF200E0AB0F /* libFLAnimatedImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFLAnimatedImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839223352AF200E0AB0F /* liblibPhoneNumber-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblibPhoneNumber-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839423352AF200E0AB0F /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839623352AF200E0AB0F /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839823352AF200E0AB0F /* libSentry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSentry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839A23352AF200E0AB0F /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839C23352AF200E0AB0F /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E614839E23352B3600E0AB0F /* libPods-RNIDNow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-RNIDNow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E631D9E923352C9B0053453D /* libFolly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFolly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6F030FA2335148500BA8B55 /* libidnow-sdk-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libidnow-sdk-universal.a"; path = "Pods/IDnowSDK/idnow-sdk/libidnow-sdk-universal.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F030FB2335148500BA8B55 /* libidnow-sdk-universal.a in Frameworks */,
+				E614839F23352B3600E0AB0F /* libPods-RNIDNow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +71,37 @@
 				B3E7B5881CC2AC0600A0062D /* RNIDNow.h */,
 				B3E7B5891CC2AC0600A0062D /* RNIDNow.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				D031DAC0ECC5AEB61C1954A3 /* Pods */,
+				651E1E0AE3F86EA6A423103D /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		651E1E0AE3F86EA6A423103D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E631D9E923352C9B0053453D /* libFolly.a */,
+				E614839E23352B3600E0AB0F /* libPods-RNIDNow.a */,
+				E614838E23352AF200E0AB0F /* libAFNetworking.a */,
+				E614839023352AF200E0AB0F /* libFLAnimatedImage.a */,
+				E614839223352AF200E0AB0F /* liblibPhoneNumber-iOS.a */,
+				E614839423352AF200E0AB0F /* libMasonry.a */,
+				E614839623352AF200E0AB0F /* libReact.a */,
+				E614839823352AF200E0AB0F /* libSentry.a */,
+				E614839A23352AF200E0AB0F /* libSocketRocket.a */,
+				E614839C23352AF200E0AB0F /* libyoga.a */,
+				E6F030FA2335148500BA8B55 /* libidnow-sdk-universal.a */,
+				39D16513E2A5FB8A91CF729C /* libPods-RNIDNow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D031DAC0ECC5AEB61C1954A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FCEE8C695CB5E2269201B23 /* Pods-RNIDNow.debug.xcconfig */,
+				90681463F8FA8DFC64FEA30E /* Pods-RNIDNow.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +111,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNIDNow" */;
 			buildPhases = (
+				6BF13D07C26FC6C9CD1965E7 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -82,7 +131,7 @@
 		58B511D31A9E6C8500147676 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
@@ -106,6 +155,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BF13D07C26FC6C9CD1965E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNIDNow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -131,12 +205,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -181,12 +257,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -214,14 +292,18 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCEE8C695CB5E2269201B23 /* Pods-RNIDNow.debug.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/IDnowSDK/idnow-sdk",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNIDNow;
 				SKIP_INSTALL = YES;
@@ -230,6 +312,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90681463F8FA8DFC64FEA30E /* Pods-RNIDNow.release.xcconfig */;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -237,7 +320,10 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/IDnowSDK/idnow-sdk",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNIDNow;
 				SKIP_INSTALL = YES;
